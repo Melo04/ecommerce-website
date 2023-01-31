@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecommerce-website/static/css/main.6b75b53a.css",
-    "main.js": "/ecommerce-website/static/js/main.2e982930.js",
+    "main.js": "/ecommerce-website/static/js/main.fe8028c9.js",
     "static/media/phone.mp4": "/ecommerce-website/static/media/phone.9a6a37a094eb954fbf65.mp4",
     "static/media/logo2.png": "/ecommerce-website/static/media/logo2.d766c7b54953b3e1abe7.png",
     "static/media/disney1.png": "/ecommerce-website/static/media/disney1.a51306f062cf26923295.png",
@@ -48,10 +48,10 @@
     "index.html": "/ecommerce-website/index.html",
     "static/media/Arrow.svg": "/ecommerce-website/static/media/Arrow.94ea34e744b92c5dad541e35d3a63dab.svg",
     "main.6b75b53a.css.map": "/ecommerce-website/static/css/main.6b75b53a.css.map",
-    "main.2e982930.js.map": "/ecommerce-website/static/js/main.2e982930.js.map"
+    "main.fe8028c9.js.map": "/ecommerce-website/static/js/main.fe8028c9.js.map"
   },
   "entrypoints": [
     "static/css/main.6b75b53a.css",
-    "static/js/main.2e982930.js"
+    "static/js/main.fe8028c9.js"
   ]
 }
