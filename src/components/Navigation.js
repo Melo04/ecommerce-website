@@ -218,19 +218,19 @@ const Navigation = () => {
             </HamburgerMenu>
             <Menu click={click}>
                 <MenuItem>
-                    <NavLinks to="/">Home</NavLinks>
+                    <NavLinks to="/ecommerce-website">Home</NavLinks>
                 </MenuItem>
                 <MenuItem>
-                    <NavLinks to="/about">About</NavLinks>
+                    <NavLinks to="/ecommerce-website/about">About</NavLinks>
                 </MenuItem>
                 <MenuItem>
-                    <NavLinks to="/products">Products</NavLinks>
+                    <NavLinks to="/ecommerce-website/products">Products</NavLinks>
                 </MenuItem>
                 <MenuItem>
-                    <NavLinks to="/collaboration">Our Collabs</NavLinks>
+                    <NavLinks to="/ecommerce-website/collaboration">Our Collabs</NavLinks>
                 </MenuItem>
                 <MenuItem>
-                    <NavLinks to="/contact">Contact</NavLinks>
+                    <NavLinks to="/ecommerce-website/contact">Contact</NavLinks>
                 </MenuItem>
 
                 <div className="mobile">
