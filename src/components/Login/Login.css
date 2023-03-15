@@ -32,7 +32,7 @@
 
 .signin-signup {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     left: 75%;
     width: 50%;
@@ -47,7 +47,7 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0rem 5rem;
+    padding: 0rem 4rem;
     transition: all 0.2s 0.7s;
     overflow: hidden;
     grid-column: 1 / 2;
@@ -64,22 +64,23 @@ form.sign-in-form {
 }
 
 .title {
-    font-size: 2.2rem;
-    color: #444;
+    font-size: 2rem;
+    color: #4837ff;
     margin-bottom: 10px;
 }
 
 .input-field {
-    max-width: 380px;
+    max-width: 320px;
     width: 100%;
-    background-color: #f0f0f0;
-    margin: 10px 0;
+    background-color: #ffffff;
+    margin: 12px 0;
     height: 55px;
-    border-radius: 55px;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
+    padding: 0 0.2rem;
     position: relative;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
 }
 
 .input-field i {
@@ -87,7 +88,7 @@ form.sign-in-form {
     line-height: 55px;
     color: #acacac;
     transition: 0.5s;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .input-field input {
@@ -96,7 +97,7 @@ form.sign-in-form {
     border: none;
     line-height: 1;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #333;
 }
 
@@ -115,24 +116,40 @@ form.sign-in-form {
     justify-content: center;
 }
 
-.social-icon {
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0.45rem;
-    color: #333;
-    border-radius: 50%;
-    border: 1px solid #333;
+.btn-icon {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.btn-text {
+    color: #0575e6;
+    font-size: 16px;
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    flex: 1;
+}
+
+.social-icon .btn-text:hover{
+    color: #fff;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #4481eb;
+    background-color: #fff;
+    text-decoration: none;
+    color: #333;
+    padding: 0 20px;
     font-size: 1.5rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .social-icon:hover {
-    color: #4481eb;
-    border-color: #4481eb;
+    background-color: #4481eb;
 }
 
 .btn {

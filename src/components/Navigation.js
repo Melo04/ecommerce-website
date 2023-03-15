@@ -234,7 +234,7 @@ const Navigation = () => {
                 </MenuItem>
 
                 <div className="mobile">
-                    {!user && <NavLinks to="/signin"><Button text="Sign In"></Button></NavLinks>}
+                    {!user && <NavLinks to="/ecommerce-website/signin"><Button text="Sign In"></Button></NavLinks>}
                     {user && (<Link to="/cart"> 
                         {user.photoURL && <img src={user.photoURL} alt="avatar" referrerPolicy='no-referrer'/>}
                         {!user.photoURL && <img src={img1} alt=''/>}
@@ -242,13 +242,13 @@ const Navigation = () => {
                 </div>
             </Menu>
             <div className="desktop">
-                {!user && <NavLinks to="/signin"><Button text="Sign In"></Button></NavLinks>}
-                {user && (<Link to="/cart">
+                {!user && <NavLinks to="/ecommerce-website/signin"><Button text="Sign In"></Button></NavLinks>}
+                {user && (<Link to="/ecommerce-website/cart">
                     {user.photoURL && <Img src={user.photoURL} alt="avatar" referrerPolicy='no-referrer'/>}
                     {!user.photoURL && <img src={img1} alt=''/>}
                 </Link>)}
             </div>
-            <CartIcon to="/cart">
+            <CartIcon to="/ecommerce-website/cart">
                 <Icon><FaShoppingCart/></Icon>
                 <AmountC>
                     <p className="total-amount">{cartAmount()}</p>

@@ -174,7 +174,7 @@ const Card = () => {
                 <Content>
                     <h2>{name}</h2>
                     <p textc={textc}>{text}</p>
-                    <Btn to="/collaboration">Explore more</Btn>
+                    <Btn to="/ecommerce-website/products">Explore more</Btn>
                 </Content>
                 <Pimg src={img} alt=''/>
             </Container>

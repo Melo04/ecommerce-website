@@ -78,7 +78,7 @@ const Categories = () => {
           <Image src={item.img}/>
           <Info>
             <Title>{item.title}</Title>
-            <Button to="/products">Shop Now</Button>
+            <Button to="/ecommerce-website/products">Shop Now</Button>
           </Info>
         </Container>
         )

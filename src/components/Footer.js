@@ -61,7 +61,7 @@ margin-bottom: 16px;
 font-family: 'Rubik', sans-serif;
 `
 
-const FooterLink = styled.a`
+const FooterLink = styled(Link)`
 color: #fff;
 text-decoration: none;
 margin-bottom: 0.5rem;
@@ -133,20 +133,9 @@ font-size: 24px;
 `
 
 const Footer = () => {
-    const [click, setClick] = useState(false)
     const toggleHome = () => {
        scroll.scrollToTop();
     };
-
-    const scrollTo = (id) => {
-        let element = document.getElementById(id);
-        element.scrollIntoView({
-            behaviour: "smooth",
-            block: "start",
-            inline: "nearest"
-        })
-        setClick(!click)
-    }
 
   return (
     <FooterContainer>
@@ -155,36 +144,36 @@ const Footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>About Us</FooterLinkTitle>
-                        <FooterLink onClick={() => scrollTo('about')}>About Us</FooterLink>
-                        <FooterLink onClick={() => scrollTo('roadmap')}>Our Story</FooterLink>
-                        <FooterLink onClick={() => scrollTo('info')}>Our Partners</FooterLink>
+                        <FooterLink to='/ecommerce-website/about'>About Us</FooterLink>
+                        <FooterLink to='/ecommerce-website/about'>Our Story</FooterLink>
+                        <FooterLink oto='/ecommerce-website/products'>Our Products</FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                        <FooterLink onClick={() => scrollTo('contact')}>Contact</FooterLink>
-                        <FooterLink to="/signin">Support</FooterLink>
-                        <FooterLink to="/signin">Sponsorships</FooterLink>
+                        <FooterLink to='/ecommerce-website/contact'>Contact</FooterLink>
+                        <FooterLink to='/ecommerce-website/contact'>Support</FooterLink>
+                        <FooterLink to='/ecommerce-website/contact'>Sponsorships</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
 
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>Our Partners</FooterLinkTitle>
-                        <FooterLink href="https://www.umt.edu.my/" target="_blank">Stranger Things</FooterLink>
-                        <FooterLink href="https://my.ambafrance.org/-English-" target="_blank">BTS</FooterLink>
-                        <FooterLink href="https://www.ukm.my/portalukm/ms/selamat-datang/" target="_blank">Pixar Toy Story</FooterLink>
-                        <FooterLink  href="https://www.um.edu.my/" target="_blank">Harry Potter</FooterLink>
-                        <FooterLink  href="https://www.um.edu.my/" target="_blank">One Piece</FooterLink>
-                        <FooterLink  href="https://www.um.edu.my/" target="_blank">Kakao Friends</FooterLink>
-                        <FooterLink  href="https://www.um.edu.my/" target="_blank">Aespa</FooterLink>
-                        <FooterLink  href="https://www.um.edu.my/" target="_blank">Olivia Rodrigo</FooterLink>
+                        <FooterLink >Stranger Things</FooterLink>
+                        <FooterLink >BTS</FooterLink>
+                        <FooterLink >Pixar Toy Story</FooterLink>
+                        <FooterLink >Harry Potter</FooterLink>
+                        <FooterLink >One Piece</FooterLink>
+                        <FooterLink >Kakao Friends</FooterLink>
+                        <FooterLink >Aespa</FooterLink>
+                        <FooterLink >Olivia Rodrigo</FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Social Media</FooterLinkTitle>
-                        <FooterLink to="/signin">Instagram</FooterLink>
-                        <FooterLink to="/signin">Facebook</FooterLink>
-                        <FooterLink to="/signin">Youtube</FooterLink>
-                        <FooterLink to="/signin">Twitter</FooterLink>
+                        <FooterLink to="/ecommerce-website/signin">Instagram</FooterLink>
+                        <FooterLink to="/ecommerce-website/signin">Facebook</FooterLink>
+                        <FooterLink to="/ecommerce-website/signin">Youtube</FooterLink>
+                        <FooterLink to="/ecommerce-website/signin">Twitter</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>

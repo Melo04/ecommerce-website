@@ -16,7 +16,12 @@ text-transform: capitalize;
 color: #000000;
 align-self: center;
 text-align: center;
+justify-content: center;
 font-family: 'Nunito', sans-serif;
+
+@media (max-width: 450px){
+    margin-left: 50px;
+}
 
 h3{
     margin: 0px 80px;

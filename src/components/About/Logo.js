@@ -29,7 +29,7 @@ img{
 const Logo = () => {
   return (
     <LogoText>
-        <Link to="/">
+        <Link to="/ecommerce-website">
           <img src={img1} alt="" />
         </Link>
     </LogoText>

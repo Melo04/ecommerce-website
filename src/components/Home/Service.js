@@ -3,6 +3,7 @@ import Svgone from "../../img/svg1.svg"
 import Svgtwo from "../../img/svg2.svg"
 import Svgthree from "../../img/svg3.svg"
 import styled from "styled-components"
+import {Link} from 'react-router-dom';
 
 const Section = styled.section`
 background: #fff;
@@ -12,7 +13,7 @@ padding-bottom: 80px;
 
 const H1 = styled.h1`
 font-size: 2.5rem;
-color: #a8ff78;
+color: #fff;
 text-align: center;
 font-weight: 400;
 letter-spacing: 5px;
@@ -22,7 +23,6 @@ font-family: "Nunito", sans-serif;
 
 const Services = styled.div`
 height: 100%;
-margin-top: 50px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -30,9 +30,7 @@ justify-content: center;
 
 const Service1 = styled.div`
 width: 320px;
-background: #a8ff78;
-background: -webkit-linear-gradient(to right, #a8ff78, #78ffd6);
-background: linear-gradient(to right, #a8ff78, #78ffd6);
+background: #7f00ff;
 padding: 15px;
 margin: 35px;
 border-radius: 10px;
@@ -66,7 +64,7 @@ border-radius: 10px;
 
 .shape-2{
   right: 20px;
-  background: #78ffd6;
+  background: #7f00ff;
   top: -10px;
   transition: all linear .5s;
 }
@@ -90,7 +88,7 @@ border-radius: 10px;
 }
 
 .shape-4{
-    background-color: #a8ff78;
+    background-color: #7f00ff;
     top: -27px;
     transition: all linear .5s;
 }
@@ -103,7 +101,7 @@ border-radius: 10px;
 }
 
 .shape-6{
-    background-color: #a8ff78;
+    background-color: #7f00ff;
     left: 40px;
     top: -27px;
     transition: all linear .5s;
@@ -143,7 +141,7 @@ margin-top: 30px;
 
 h2{
   text-transform: uppercase;
-  color: #228B22;
+  color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
   font-family: "Nunito", sans-serif;
@@ -151,7 +149,7 @@ h2{
 
 p{
   margin-top: 20px;
-  color: #000;
+  color: #fff;
   margin: 20px;
   font-size: 15px;
   font-family: "Rubik", sans-serif;
@@ -162,23 +160,21 @@ const Shapes = styled.div`
 position: relative;
 `;
 
-const Btn = styled.button`
-display: block;
-margin: 0 auto;
+const Btn = styled(Link)`
+display: inline-block;
 background-color: #fff;
-color: #228B22;
+color: #7f00ff;
+text-decoration: none;
 outline: none;
 border: none;
-text-decoration: none;
-font-size: 15px;
-font-family: 'Rubik', sans-serif;
-padding: 0.6rem 2rem;
+font-family: "Nunito", sans-serif;
+font-size: 0.9em;
+left: 22%;
+padding: 0.9rem 2.3rem;
 border-radius: 50px;
 cursor: pointer;
 transition: all 0.2s ease;
 position: relative;
-margin-top: -30px;
-margin-bottom: 20px;
 
 &:hover{
     transform: scale(0.9);
@@ -190,9 +186,9 @@ margin-bottom: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid #228B22;
-    width: 110%;
-    height: 130%;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
     border-radius: 50px;
     transition: all 0.2s ease;
 }
@@ -202,7 +198,6 @@ margin-bottom: 20px;
     padding: 0.3rem;
 }
 `;
-
 
 const Service = () => {
   return (
@@ -223,7 +218,7 @@ const Service = () => {
             <p>Customize your own phone case with our photo grid or photo collage builder. Make photo grid phone case easily with your own photos and style your own phone!
             </p>
           </Description>
-          <Btn link="/about">Explore now</Btn>
+          <Btn to="/ecommerce-website/about">Explore now</Btn>
           <Shapes>
             <div className="shape-4"></div>
             <div className="shape-5"></div>
@@ -245,7 +240,7 @@ const Service = () => {
             <p>Our cases come with different colors and styles. You can expect the same high quality cases that are built to be dropped. We've got you covered.
             </p>
           </Description>
-          <Btn link="/about">Explore now</Btn>
+          <Btn to="/ecommerce-website/about">Explore now</Btn>
           <Shapes>
             <div className="shape-4"></div>
             <div className="shape-5"></div>
@@ -267,7 +262,7 @@ const Service = () => {
             <p>We promise to provide customers the best service in the town. We shipped our items globally. No matter where you are from, we will shipped right to your house. 
             </p>
           </Description>
-          <Btn link="/about">Explore now</Btn>
+          <Btn to="/ecommerce-website/about">Explore now</Btn>
           <Shapes>
             <div className="shape-4"></div>
             <div className="shape-5"></div>

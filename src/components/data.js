@@ -61,10 +61,10 @@ export const people = [
   },
   {
     id: 2,
-    img: "https://image.kpopmap.com/2020/07/261e04fcc1abcfbb612bf5d3c5ff69a7.jpg",
-    name: "Kim Seok-Jin",
-    job: "Singer/Actor",
-    comment: "Such an awesome case. It's sturdy, the colors in the design are vibrant, and it is holding up better than any other case I've ever had to wear and tear. I also sanitize my phone fairly frequently with alcohol wipes and I haven't noticed that having any impact on the case itself."
+    img: "https://pbs.twimg.com/media/De2WSRJUwAAP7sm.jpg",
+    name: "Park Seo Joon",
+    job: "Korean male actor",
+    comment: "Thank you for the amazing service. The products is even better than i expected.👍"
   },
   {
     id: 3,
@@ -77,29 +77,29 @@ export const people = [
     id: 4,
     img: "https://lh3.googleusercontent.com/TOJUwoR-4bKat02zfWuoC_1X4YvqAxORO3ZiESE9gaM_ozwmcDTOY0HYlfVJ7XGv6gwZkMlladVcC2FVuaTWIveWEI-f7GD7nmm4lxDVS6otRSQ=w960-rj-nu-e365",
     name: "Kim Tae-Hyung",
-    job: "Singer",
+    job: "Korean boy band Singer",
     comment: "Thank you for the amazing service. The products is even better than i expected.👍"
   },
   {
     id: 5,
-    img: "https://i.pinimg.com/736x/fc/77/25/fc77253c60cf6ab9d6c3702a8aeace8d.jpg",
-    name: "Lee Ji-Eun",
-    job: "Korean singer-songwriter",
+    img: "https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg",
+    name: "Tom Holland",
+    job: "British Actor",
     comment: "love the product so much website is easy to follow and simply just all good 😎"
   },
   {
     id: 6,
-    img: "https://pbs.twimg.com/media/De2WSRJUwAAP7sm.jpg",
-    name: "Park Seo Joon",
-    job: "Korean singer-songwriter",
-    comment: "I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future."
+    img: "http://res.heraldm.com/content/image/2021/10/21/20211021000772_0.jpg",
+    name: "Han So Hee",
+    job: "Korean female actress",
+    comment: "Thank you for the amazing service. The products is even better than i expected.👍"
   },
   {
     id: 7,
-    img: "https://wallpaperaccess.com/full/2395125.jpg",
-    name: "Lee Ji-Eun",
-    job: "Korean singer-songwriter",
-    comment: "I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future."
+    img: "https://media.vanityfair.com/photos/580a0b41ceb79a6c5ca4c5ef/2:3/w_640,h_960,c_limit/benedict-cumberbatch-doctor-strange.jpg",
+    name: "Doctor Strange",
+    job: "Marvel superhero",
+    comment: "Thank you for the amazing service. The products is even better than i expected.👍"
   }
 ];
 

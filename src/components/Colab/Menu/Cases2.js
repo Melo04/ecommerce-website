@@ -7,6 +7,7 @@ import { ShopContext } from './shop-context';
 const ProContainer = styled.div`
 display: flex;
 justify-content: space-between;
+flex-wrap: wrap;
 padding-top: 20px;
 flex-wrap: wrap;
 margin: 50px 50px;
@@ -15,7 +16,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
 
 const Pro = styled.div`
-width: 22%;
+flex-basis: calc(25% - 20px);
 min-width: 150px;
 padding: 15px 8px;
 text-decoration: none;
@@ -26,6 +27,10 @@ cursor: pointer;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 margin: 15px 0;
 transition: 0.2s ease;
+
+@media (max-width: 900px){
+    flex-basis: calc(50% - 20px)
+}
 
 img{
     width: 90%;
@@ -112,6 +117,15 @@ text-decoration: none;
 color: #000;
 `
 
+const Btn = styled(Link)`
+color: #000;
+text-decoration: none;
+
+&:hover {
+    color: #FF0000;
+}
+`
+
 const Cases2 = ({cases}) => {
     const {addToCart} = useContext(ShopContext);
 
@@ -119,12 +133,13 @@ const Cases2 = ({cases}) => {
             return(
                 <Pro key={item.id}>
                     <img src={item.img} alt=""/>
-                    <Details to={`/products/${item.id}`}>
+                    <Details to={`/ecommerce-website/products/${item.id}`}>
                         <Des>
                             <span>{item.category}</span>
                             <h5>{item.title}</h5>
                             <h3>{item.des}</h3>
                             <h4>RM {item.price}</h4>
+                            <Btn to={`/ecommerce-website/products/${item.id}`}>View Details 👈</Btn>
                         </Des>
                     </Details>
                     <Cart onClick={() => addToCart(item.id)}><AiOutlineShoppingCart/></Cart>

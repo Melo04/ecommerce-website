@@ -158,7 +158,7 @@ const TypeWriterText = () => {
         />  
     </Title>
     <Subtitle>Keep your phone stylish with <br></br> our best selling prints.</Subtitle>
-    <Btn to='/'>Explore more</Btn>
+    <Btn to='/ecommerce-website/products'>Explore more</Btn>
     </>
   )
 }

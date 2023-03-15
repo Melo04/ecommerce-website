@@ -268,7 +268,7 @@ const Payment2 = () => {
       <Cart>
         {totalAmount > 0 ? (
           <>
-          {user && <h1>Welcome{user.displayName}</h1>}
+          {user && <h1>Welcome {user.displayName}</h1>}
           <h1>Your bag</h1>
         <ToastContainer/>
         <table width="100%">

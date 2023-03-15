@@ -58,6 +58,20 @@ const Category = ({filterCollab}) => {
             pagination: false,
             drag: "free",
             gap: "4rem",
+            breakpoints: {
+                1200: {
+                perPage: 3,
+                gap: "2rem",
+                },
+                768: {
+                perPage: 2,
+                gap: "1rem",
+                },
+                576: {
+                perPage: 1,
+                gap: "0.5rem",
+                },
+            },
         }}>
 
             <SplideSlide>

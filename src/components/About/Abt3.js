@@ -50,6 +50,7 @@ display: flex;
 justify-content: space-between;
 z-index: -99;
 background-color: #fff;
+animation-duration: 10s;
 
 img{
     width: 49%;
@@ -116,7 +117,7 @@ const Abt3 = ({heading, text, img, img2}) => {
         <DesText>
             <h2>{heading}</h2>
             <p>{text}</p>
-            <Btn to="/collaboration">Shop Now</Btn>
+            <Btn to="/ecommerce-website/collaboration">Shop Now</Btn>
         </DesText>
 
         <Image>

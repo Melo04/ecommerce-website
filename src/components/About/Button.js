@@ -7,7 +7,6 @@ background-color: #000;
 color: #fff;
 outline: none;
 border: none;
-
 font-size: 0.875em;
 padding: 0.9rem 2.3rem;
 border-radius: 50px;

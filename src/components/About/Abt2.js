@@ -115,7 +115,7 @@ const Abt2 = ({heading, text, img, img2}) => {
         <DesText>
             <h2>{heading}</h2>
             <p>{text}</p>
-            <Btn to="/collaboration">Shop Now</Btn>
+            <Btn to="/ecommerce-website/collaboration">Shop Now</Btn>
         </DesText>
 
         <Image>

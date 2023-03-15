@@ -4,7 +4,8 @@ import Carousel from './Carousel'
 import { Link } from 'react-router-dom'
 
 const Section = styled.section`
-min-height: 100vh;
+margin-top: 90px;
+min-height: 90vh;
 width: 100%;
 background: #fff;
 color: #fff;
@@ -19,16 +20,22 @@ width: 85%;
 min-height: 90vh;
 border-radius: 50px;
 margin: 0 auto;
-background: #59c173; /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #59c173, #a17fe0, #5d26c1); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+background: #a8ff78; /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8ff78, #78ffd6);
+background: linear-gradient(to right, #a8ff78, #78ffd6);
 color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
 
-@media screen and (max-width: 1000px){
-    min-height: 1000px;
+@media (max-width: 50em){
+  margin-top: 50px;
+  width: 90%;
+  flex-direction: column;
+
+  &>*:last-child{
+    width: 90%;
+  }
 }
 `
 
@@ -60,6 +67,10 @@ transition: all 0.2s ease;
 position: relative;
 margin-top: 10px;
 
+@media (max-width: 50em){
+  margin-bottom: 50px;
+}
+
 &:hover{
     transform: scale(0.9);
 }
@@ -86,17 +97,24 @@ margin-top: 10px;
 const Title = styled.h2`
 font-size: 40px;
 text-transform: capitalize;
-color: #fff;
 align-self: flex-start;
 width: 80%;
 margin: 0 auto;
 margin-top: 30px;
 font-family: 'Nunito', sans-serif;
+background: #0575e6; /* fallback for old browsers */
+background: #7f00ff; /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7f00ff, #e100ff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7f00ff, #e100ff); 
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
 `;
 
 const SubText = styled.p`
 font-size: 18px;
-color: #fff;
+color: #000;
 align-self: flex-start;
 width: 80%;
 margin: 1rem auto;
@@ -106,7 +124,7 @@ text-align: justify;
 
 const SubTextLight = styled.p`
 font-size: 18px;
-color: 	#fff;
+color: 	#000;
 align-self: flex-start;
 text-align: justify;
 width: 80%;
@@ -130,7 +148,7 @@ const Phone = () => {
             <SubTextLight>
               We're big believers in self-expression, so we wanted to embody just that for the dreamers and playmakers who settle for nothing less than the best for their phone cases!
             </SubTextLight>
-            <Btn to="/about">Explore Now</Btn>
+            <Btn to="/ecommerce-website/about">Explore Now</Btn>
             </Box>
       </Container>
     </Section>

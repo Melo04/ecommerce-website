@@ -233,7 +233,7 @@ const Testimonial = () => {
                   <h2>{name}</h2>
                   <small>{job}</small>
                   <p>{comment}</p>
-                  <Btn to='/collaboration'>See More</Btn>
+                  <Btn to='/ecommerce-website/collaboration'>See More</Btn>
               </Card>
             </SwiperSlide>
             )

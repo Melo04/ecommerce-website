@@ -124,19 +124,20 @@ const Login = () => {
             <input type="submit" value="Login" className="btn solid" onClick={login}/>
             <p className="social-text">Or Sign in with social platforms</p>
             <div className="social-media">
-              <a href="/" className="social-icon">
-                <FaFacebook/>
-              </a>
-              <Link to="/signin" className="social-icon" onClick={GoogleLogin}>
-                <FcGoogle/>
+
+              <Link className="social-icon" onClick={GoogleLogin}>
+                <span className="btn-icon"><FcGoogle /></span>
+                <span className="btn-text">Sign in with Google</span>
               </Link>
-              <a href="/" className="social-icon">
-                <FaInstagram/>
-              </a>
+
             </div>
           </form>
           <form action="#" className="sign-up-form">
             <h2 className="title">Sign up</h2>
+            <div className="input-field">
+              <i><FaUser/></i>
+              <input type="text" placeholder="Name"/>
+            </div>
             <div className="input-field">
               <i><FaUser/></i>
               <input type="text" placeholder="Email" onChange={(e) => {setRegisterEmail(e.target.value)}}/>
@@ -152,15 +153,10 @@ const Login = () => {
             <input type="submit" className="btn" value="Sign up" onClick={register}/>
             <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">
-              <a href="/" className="social-icon">
-                <FaFacebook/>
-              </a>
-              <Link to="/signin" className="social-icon" onClick={GoogleLogin}>
-                <FcGoogle/>
+              <Link className="social-icon" onClick={GoogleLogin}>
+                <span className="btn-icon"><FcGoogle /></span>
+                <span className="btn-text">Sign up with Google</span>
               </Link>
-              <a href="/" className="social-icon">
-                <FaInstagram/>
-              </a>
             </div>
           </form>
         </div>

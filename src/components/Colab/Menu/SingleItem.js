@@ -16,6 +16,7 @@ justify-content: center;
 `
 const Product = styled.div`
 width: 90%;
+min-height: 450px;
 max-width: 800px;
 display: flex;
 `
@@ -63,31 +64,6 @@ form{
     margin-left: -80px;
     font-size: 15px;
     font-weight: 400;
-}
-`
-
-const Sizeselect = styled.div`
-display: flex;
-align-items: center;
-margin-top: 50px;
-
-p{
-    width: 70px;
-}
-
-input:checked + span{
-    color: blue;
-    font-weight: 600;
-}
-
-input{
-    display: none;
-}
-
-span{
-    padding: 5px;
-    margin-right: 11px;
-    cursor: pointer;
 }
 `
 
@@ -175,30 +151,6 @@ const SingleItem = () => {
                 <h3>30% off</h3>
                 <p>{thisProduct.des}</p>
                 <form>
-                    <Sizeselect>
-                        <p>Size</p>
-                        <label for="small">
-                            <input type="radio" name="size" id="small"/>
-                            <span>S</span>
-                        </label>
-                        <label for="medium">
-                            <input type="radio" name="size" id="medium"/>
-                            <span>M</span>
-                        </label>
-                        <label for="large">
-                            <input type="radio" name="size" id="large"/>
-                            <span>L</span>
-                        </label>
-                        <label for="x-large">
-                            <input type="radio" name="size" id="x-large"/>
-                            <span>XL</span>
-                        </label>
-                        <label for="xx-large">
-                            <input type="radio" name="size" id="xx-large"/>
-                            <span>XXL</span>
-                        </label>
-                    </Sizeselect>
-
                     <Colorselect>
                         <p>Color</p>
                         <label>
